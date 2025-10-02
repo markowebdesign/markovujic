@@ -1045,7 +1045,51 @@
               <!--end success message -->
 
               <!--begin contact form -->
-              
+              <form
+                id="contact-form"
+                class="contact"
+                action="php/contact.php"
+                method="post"
+              >
+                <input
+                  class="contact-input white-input"
+                  required=""
+                  name="contact_names"
+                  placeholder="Ime i prezime*"
+                  type="text"
+                />
+
+                <input
+                  class="contact-input white-input"
+                  required=""
+                  name="contact_email"
+                  placeholder="E-mail Adresa*"
+                  type="email"
+                />
+
+                <input
+                  class="contact-input white-input"
+                  required=""
+                  name="contact_phone"
+                  placeholder="Broj telefona*"
+                  type="text"
+                />
+
+                <textarea
+                  class="contact-commnent white-input"
+                  rows="2"
+                  cols="20"
+                  name="contact_message"
+                  placeholder="Vaša poruka..."
+                ></textarea>
+
+                <input
+                  value="Pošalji"
+                  id="submit-button"
+                  class="contact-submit"
+                  type="submit"
+                />
+              </form>
               <!--end contact form -->
 
               <p class="register-form-terms">
