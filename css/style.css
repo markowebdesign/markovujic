@@ -1722,28 +1722,4 @@ ul.benefits.white li i {
     padding-left: 25px;
   }
 }
-/* Stil za dugme SRB */
-.srb-btn {
-    /* Žuta pozadina */
-    background-color: #ffc107 !important; 
-    /* Crni tekst (ako je potrebno) */
-    color: #000000 !important; 
-    /* Uklanjanje crvenog border-a da bi se uklopio sa žutom pozadinom */
-    border-color: #ffc107 !important; 
-}
 
-/* Hover efekat: Pozadina postaje crvena */
-.srb-btn:hover {
-    background-color: #dc3545 !important; /* Crvena */
-    border-color: #dc3545 !important;
-    color: #ffffff !important; /* Beli tekst na crvenoj pozadini */
-}
-
-/* Stil za aktivan klik (opciono) */
-.srb-btn:active,
-.srb-btn:focus {
-    background-color: #dc3545 !important;
-    border-color: #dc3545 !important;
-    color: #ffffff !important;
-    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5) !important;
-}
