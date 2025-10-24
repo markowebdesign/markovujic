@@ -7,29 +7,21 @@
     <meta name="description" content="" />
 
 
-
-
-    </head>
-    
-      <link 
+    <link 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     rel="stylesheet"
   >
 
     <title>Marko Vujić - Grafički i WEB Dizajn</title>
 
-    <!-- Loading Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Loading Template CSS -->
     <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/pe-icon-7-stroke.css" />
     <link href="css/style-magnific-popup.css" rel="stylesheet" />
 
-    <!-- Awsome Fonts -->
     <link rel="stylesheet" href="css/all.min.css" />
 
-    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -39,25 +31,60 @@
       rel="stylesheet"
     />
 
-    <!-- Font Favicon -->
-     
     <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <style>
+      /* Stilovi za pozicioniranje i izgled zastavice u navigaciji (Desktop) */
+      .language-flag {
+          /* Uklanjanje podrazumevanog paddinga da bi krug bio uz ivicu */
+          padding: 0;
+          margin-left: 15px; /* Mala margina da se odvoji od dugmeta */
+          display: flex; /* Centriranje unutar LI-ja */
+          align-items: center;
+      }
+  
+      .language-flag a {
+          /* Stilovi za krug (beli okvir) */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 35px; /* Veličina kruga/okvira */
+          height: 35px;
+          border: 2px solid white; /* Beli okvir */
+          border-radius: 50%; /* Da bude krug */
+          font-size: 1.1rem; /* Povećavamo veličinu zastavice da se bolje vidi */
+          transition: all 0.2s ease-in-out; /* Dodaje lepu tranziciju */
+          background-color: transparent; /* Prozirna pozadina unutar okvira */
+      }
+  
+      /* Stil za hover efekat (opciono) */
+      .language-flag a:hover {
+          border-color: #E52F37; /* Crvena boja okvira na hover (kao crveno dugme) */
+          transform: scale(1.05); /* Mali skok na hover */
+      }
+      
+      /* ======================================================= */
+      /* NOVI CSS: FIX za razmak na mobilnom prikazu */
+      /* ======================================================= */
+      @media (max-width: 991.98px) {
+          /* Primenjuje se na kolapsirani meni na mobilnim uređajima */
+          .language-flag {
+              /* Dodaje razmak iznad zastavice da se odvoji od "Kontaktirajte me" */
+              margin-top: 15px; /* Povećano na 15px radi bolje vidljivosti */
+              margin-left: 0 !important; /* Resetuje levu marginu */
+              justify-content: center; /* Centrirajte zastavicu u kolapsiranom meniju */
+          }
+      }
+      /* ======================================================= */
+    </style>
   </head>
 
   <body>
-    <!--begin header -->
     <header class="header">
-      <!--begin navbar-fixed-top -->
       <nav class="navbar navbar-default navbar-fixed-top">
-        <!--begin container -->
         <div class="container">
-          <!--begin navbar -->
           <nav class="navbar navbar-expand-lg">
-            <!--begin logo -->
             <a class="navbar-brand" href="#">MarkoWEBDizajn</a>
-            <!--end logo -->
-
-            <!--begin navbar-toggler -->
             <button
               class="navbar-toggler collapsed"
               type="button"
@@ -71,11 +98,7 @@
                 ><i class="fas fa-bars"></i
               ></span>
             </button>
-            <!--end navbar-toggler -->
-
-            <!--begin navbar-collapse -->
             <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-              <!--begin navbar-nav -->
               <ul class="navbar-nav ml-auto">
                 <li><a href="#home">Početna</a></li>
 
@@ -91,30 +114,22 @@
                   <a href="#contact" class="discover-btn">Kontaktirajte me</a>
                 </li>
 
-
-
-              </ul>
-              <!--end navbar-nav -->
-            </div>
-            <!--end navbar-collapse -->
-          </nav>
-          <!--end navbar -->
-        </div>
-        <!--end container -->
-      </nav>
-      <!--end navbar-fixed-top -->
-    </header>
-    <!--end header -->
-
-    <!--begin home section -->
+                <li class="nav-item language-flag">
+                    <a href="index_eng.html" title="English" target="_self" class="external">
+                        🇬🇧
+                    </a>
+                </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </header>
     <section class="home-section" id="home">
       <div class="home-section-overlay"></div>
 
-      <!--begin container -->
       <div class="container">
-        <!--begin row -->
         <div class="row">
-          <!--begin col-md-6-->
           <div class="col-md-6">
             <h1>
               Profesionalni <br> <span class="red">WEB i Grafički dizajn</span> <br> za vaš biznis.
@@ -124,34 +139,20 @@
               Više od 10 godina iskustva u kreiranju modernih sajtova i vizuelnih identiteta koji grade poverenje i privlače klijente.
             </p>
       <a href="#gallery" class="btn-red small scrool">Portfolio radova</a>
-            <!--begin popup-video-wrapper-->
             <div class="popup-gallery-wrapper">
-              <!--begin popup-video-->
               <div class="popup-gallery">
             
                 </a>
               </div>
-              <!--end popup-video-->
+              </div>
             </div>
-            <!--end popup-video-wrapper-->
           </div>
-          <!--end col-md-6-->
         </div>
-        <!--end row -->
-      </div>
-      <!--end container -->
-    </section>
-    <!--end home section -->
-
-    <!--begin section-white -->
+      </section>
     <section class="section-white" id="services">
-      <!--begin services-wrapper -->
       <div class="services-wrapper">
-        <!--begin container -->
         <div class="container">
-          <!--begin row -->
           <div class="row">
-            <!--begin col-md-12-->
             <div class="col-md-12 text-center">
               <h2 class="section-title">Šta radim?</h2>
 
@@ -160,13 +161,8 @@
                 aplikacija uz HTML/CSS/JS, do kreiranja snažnog vizuelnog Grafičkog Dizajna za vaš brend.
               </p>
             </div>
-            <!--end col-md-12 -->
-          </div>
-          <!--end row -->
-
-          <!--begin row -->
+            </div>
           <div class="row">
-            <!--begin col-md-4 -->
             <div class="col-md-4">
               <div class="main-services">
             
@@ -181,9 +177,6 @@
                 </p>
               </div>
             </div>
-            <!--end col-md-4 -->
-
-            <!--begin col-md-4 -->
             <div class="col-md-4">
               <div class="main-services">
 
@@ -197,9 +190,6 @@
                 </p>
               </div>
             </div>
-            <!--end col-md-4 -->
-
-            <!--begin col-md-4 -->
             <div class="col-md-4">
               <div class="main-services">
            <i class="fa-solid fa-pen-nib"></i>
@@ -211,25 +201,14 @@
                    Vizuelno prenosimo vašu poruku i ostavljamo snažan utisak.
               </div>
             </div>
-            <!--end col-md-4 -->
+            </div>
           </div>
-          <!--end row -->
         </div>
-        <!--end container -->
-      </div>
-      <!--end services-wrapper -->
-    </section>
-    <!--end section-white -->
-
-    <!--begin section-grey -->
+      </section>
     <section class="section-grey" id="about">
-      <!--begin container-->
       <div class="container">
-        <!--begin row-->
         <div class="row">
-          <!--begin col-md-6-->
           <div class="col-md-6">
-            <!--begin col-md-6-->
             <div class="left-image">
               <img
                 src="https://i.imgur.com/8aXz8Qk.jpeg"
@@ -237,11 +216,7 @@
                 alt="Happy"
               />
             </div>
-            <!--end col-sm-6-->
-          </div>
-          <!--end col-sm-6-->
-
-          <!--begin col-md-6-->
+            </div>
           <div class="col-md-6 margin-top-20">
             <h3>O meni</h3>
 
@@ -262,9 +237,7 @@
               </li>
             </ul>
 
-            <!--begin row-->
             <div class="row">
-              <!--begin col-md-6-->
               <div class="col-md-6">
                 <ul class="freelancer-details">
                   <li>
@@ -280,9 +253,6 @@
                   
                 </ul>
               </div>
-              <!--end col-sm-6-->
-
-              <!--begin col-md-6-->
               <div class="col-md-6">
                 <ul class="freelancer-details">
                   <li>
@@ -302,27 +272,15 @@
                   </li>
                 </ul>
               </div>
-              <!--end col-sm-6-->
-            </div>
-            <!--end row-->
-
+              </div>
             <a href="#" class="btn-red small scrool">Portfolio radova</a>
           </div>
-          <!--end col-md-6-->
+          </div>
         </div>
-        <!--end row-->
-      </div>
-      <!--end container-->
-    </section>
-    <!--end section-grey -->
-
-    <!--begin section-white -->
+      </section>
     <section class="section-white">
-      <!--begin container-->
       <div class="container">
-        <!--begin row-->
         <div class="row">
-          <!--begin col-md-6-->
           <div class="col-md-6">
             <h3>Veštine i Edukacija</h3>
 
@@ -338,11 +296,7 @@
 
             <a href="#gallery" class="btn-red small scrool">Pogledajte moje radove</a>
           </div>
-          <!--end col-sm-6-->
-
-          <!--begin col-md-6-->
           <div class="col-md-6">
-            <!--begin progress-list -->
             <ul class="progress-list">
               <li>
                 <p>WordPress <span>90%</span></p>
@@ -414,23 +368,13 @@
                 </div>
               </li>
             </ul>
-            <!--end progress-list -->
+            </div>
           </div>
-          <!--end col-md-6-->
         </div>
-        <!--end row-->
-      </div>
-      <!--end container-->
-    </section>
-    <!--end section-white -->
-
-    <!--begin testimonials section -->
+      </section>
     <section class="section-grey" id="testimonials">
-      <!--begin container -->
       <div class="container">
-        <!--begin row -->
         <div class="row align-items-center">
-          <!--begin col-md-5 -->
           <div class="col-md-5 col-sm-12">
             <h2>Šta Klijenti Kažu</h2>
 
@@ -439,11 +383,8 @@
               Pogledajte šta kažu oni koji su sarađivali sa mnom i uverite se u kvalitet, pouzdanost i posvećenost svakom zadatku.
             </p>
 
-            <!--begin row-->
             <div class="row">
-              <!--begin col-md-4-->
               <div class="col-md-4 col-sm-6">
-                <!--begin testim-platform-->
                 <div class="testim-platform first">
                   <p>LinkedIn</p>
 
@@ -455,13 +396,8 @@
                     <i class="fas fa-star-half-alt" aria-hidden="true"></i>
                   </div>
                 </div>
-                <!--end testim-platform-->
-              </div>
-              <!--end col-sm-4-->
-
-              <!--begin col-md-4-->
+                </div>
               <div class="col-md-4 col-sm-6">
-                <!--begin testim-platform-->
                 <div class="testim-platform">
                   <p>99Design</p>
 
@@ -473,23 +409,12 @@
                     <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
-                <!--end testim-platform-->
+                </div>
               </div>
-              <!--end col-sm-4-->
             </div>
-            <!--end row-->
-          </div>
-          <!--end col-md-5 -->
-
-          <!--begin col-md-1 -->
           <div class="col-md-1"></div>
-          <!--end col-md-1 -->
-
-          <!--begin col-md-6-->
           <div class="col-md-6">
-            <!--begin accordion -->
             <div class="accordion" id="accordionFAQ">
-              <!--begin card -->
               <div class="card">
                 <div
                   id="collapseOne"
@@ -525,9 +450,6 @@
                   </h5>
                 </div>
               </div>
-              <!--end card -->
-
-              <!--begin card -->
               <div class="card">
                 <div
                   id="collapseTwo"
@@ -563,9 +485,6 @@
                   </h5>
                 </div>
               </div>
-              <!--end card -->
-
-              <!--begin card -->
               <div class="card">
                 <div
                   id="collapseThree"
@@ -602,44 +521,25 @@
                   </h5>
                 </div>
               </div>
-              <!--end card -->
+              </div>
             </div>
-            <!--end accordion -->
           </div>
-          <!--end col-md-6-->
         </div>
-        <!--end row -->
-      </div>
-      <!--end container -->
-    </section>
-    <!--end testimonials section -->
-
-    <!--begin gallery section -->
+      </section>
     <section class="section-white" id="gallery">
-      <!--begin container -->
       <div class="container">
-        <!--begin row -->
         <div class="row">
-          <!--begin col-md-12 -->
           <div class="col-md-12 text-center padding-bottom-30">
             <h2 class="section-title">Neki od mojih radova</h2>
 
             <p class="section-subtitle">Otkrijte najnovije projekte koji dokazuju kako uspešno kombinujem atraktivan dizajn i funkcionalni web development koristeći WordPress i custom rešenja.</p>
           </div>
-          <!--end col-md-12 -->
+          </div>
         </div>
-        <!--end row -->
-      </div>
-      <!--end container -->
-
-      <!--begin container -->
       <div class="container">
-        <!--begin row-->
         <div class="row">
-          <!--begin col-md-4 -->
           <div class="col-md-4 col-sm-6 col-xs-12">
             <figure class="gallery-insta">
-              <!--begin popup-gallery-->
               <div class="popup-gallery popup-gallery-rounded portfolio-pic">
                 <a class="popup2" href="https://i.imgur.com/tzHSX7v.jpeg">
                   <img
@@ -655,15 +555,10 @@
                   ></span>
                 </a>
               </div>
-              <!--end popup-gallery-->
-            </figure>
+              </figure>
           </div>
-          <!--end col-md-4 -->
-
-          <!--begin col-md-4 -->
           <div class="col-md-4 col-sm-6 col-xs-12">
             <figure class="gallery-insta">
-              <!--begin popup-gallery-->
               <div class="popup-gallery popup-gallery-rounded portfolio-pic">
                 <a class="popup2" href="https://i.imgur.com/aljfXR4.jpeg">
                   <img
@@ -679,15 +574,10 @@
                   ></span>
                 </a>
               </div>
-              <!--end popup-gallery-->
-            </figure>
+              </figure>
           </div>
-          <!--end col-md-4 -->
-
-          <!--begin col-md-4 -->
           <div class="col-md-4 col-sm-6 col-xs-12">
             <figure class="gallery-insta">
-              <!--begin popup-gallery-->
               <div class="popup-gallery popup-gallery-rounded portfolio-pic">
                 <a class="popup2" href="https://i.imgur.com/sH6hJ77.jpeg">
                   <img
@@ -703,15 +593,10 @@
                   ></span>
                 </a>
               </div>
-              <!--end popup-gallery-->
-            </figure>
+              </figure>
           </div>
-          <!--end col-md-4 -->
-
-          <!--begin col-md-4 -->
           <div class="col-md-4 col-sm-6 col-xs-12">
             <figure class="gallery-insta">
-              <!--begin popup-gallery-->
               <div class="popup-gallery popup-gallery-rounded portfolio-pic">
                 <a class="popup2" href="https://i.imgur.com/sR8uLWY.jpeg">
                   <img
@@ -727,15 +612,10 @@
                   ></span>
                 </a>
               </div>
-              <!--end popup-gallery-->
-            </figure>
+              </figure>
           </div>
-          <!--end col-md-4 -->
-
-          <!--begin col-md-4 -->
           <div class="col-md-4 col-sm-6 col-xs-12">
             <figure class="gallery-insta">
-              <!--begin popup-gallery-->
               <div class="popup-gallery popup-gallery-rounded portfolio-pic">
                 <a class="popup2" href="https://i.imgur.com/yUUhbBx.jpeg">
                   <img
@@ -751,15 +631,10 @@
                   ></span>
                 </a>
               </div>
-              <!--end popup-gallery-->
-            </figure>
+              </figure>
           </div>
-          <!--end col-md-4 -->
-
-          <!--begin col-md-4 -->
           <div class="col-md-4 col-sm-6 col-xs-12">
             <figure class="gallery-insta">
-              <!--begin popup-gallery-->
               <div class="popup-gallery popup-gallery-rounded portfolio-pic">
                 <a class="popup2" href="https://i.imgur.com/8TUVjZc.jpeg">
                   <img
@@ -775,20 +650,12 @@
                   ></span>
                 </a>
               </div>
-              <!--end popup-gallery-->
-            </figure>
+              </figure>
           </div>
-          <!--end col-md-4 -->
+          </div>
         </div>
-        <!--end row -->
-      </div>
-      <!--end container -->
-
-      <!--begin container -->
       <div class="container">
-        <!--begin row -->
         <div class="row">
-          <!--begin col-md-12 -->
           <hr>
         
           <div class="col-md-12 text-center padding-top-10">
@@ -796,21 +663,12 @@
               Sviđa vam se šta vidite? Budite u toku sa mojim najnovijim projektima, dizajnerskim idejama i web savetima na društvenim mrežama. Povežimo se! <a href="https://www.instagram.com/graficki_web_dizajn_ks/" target="_blank" rel="noopener noreferrer">@graficki_web_dizajn_ks</a>
             </p>
           </div>
-          <!--end col-md-12 -->
+          </div>
         </div>
-        <!--end row -->
-      </div>
-      <!--end container -->
-    </section>
-    <!--end gallery section -->
-
-    <!--begin pricing section -->
+      </section>
     <section class="section-grey" id="pricing">
-      <!--begin container -->
       <div class="container">
-        <!--begin row -->
         <div class="row align-items-center">
-          <!--begin col-md-4 -->
           <div class="col-md-4 col-sm-12">
             <h3>Jasni Paketi Prilagođeni Vašim Ciljevima</h3>
 
@@ -819,9 +677,6 @@
               Izaberite opciju koja najbolje odgovara vašim zahtevima, bilo da vam treba samo dizajn, WordPress sajt ili custom web rešenje.
             </p>
           </div>
-          <!--end col-md-4 -->
-
-          <!--begin col-md-4-->
           <div class="col-md-4 col-sm-6">
             <div class="price-box-white">
               <ul class="pricing-list">
@@ -841,9 +696,6 @@
               </ul>
             </div>
           </div>
-          <!--end col-md-4 -->
-
-          <!--begin col-md-4 -->
           <div class="col-md-4 col-sm-6">
             <div class="price-box-grey">
               <ul class="pricing-list">
@@ -862,21 +714,12 @@
               </ul>
             </div>
           </div>
-          <!--end col-md-4 -->
+          </div>
         </div>
-        <!--end row -->
-      </div>
-      <!--end container -->
-    </section>
-    <!--end pricing section -->
-
-    <!--begin faq section -->
+      </section>
     <section class="section-white" id="faq">
-      <!--begin container -->
       <div class="container">
-        <!--begin row -->
         <div class="row">
-          <!--begin col-md-12-->
           <div class="col-md-12 text-center padding-bottom-10">
             <h2 class="section-title">Često Postavljana Pitanja (FAQ)</h2>
 
@@ -884,13 +727,8 @@
               Ako i dalje imate pitanja ili ste spremni da započnete projekat, budite slobodni da me kontaktirate direktno!
             </p>
           </div>
-          <!--end col-md-12 -->
-        </div>
-        <!--end row -->
-
-        <!--begin row -->
+          </div>
         <div class="row">
-          <!--begin col-md-6-->
           <div class="col-md-6">
             <div class="faq-box">
               <h5>Koja je razlika između WordPress sajta i custom rešenja?</h5>
@@ -910,9 +748,6 @@
               </p>
             </div>
           </div>
-          <!--end col-md-6 -->
-
-          <!--begin col-md-6-->
           <div class="col-md-6">
             <div class="faq-box">
               <h5>Da li se bavite samo dizajnom ili i kodiranjem (developmentom)?</h5>
@@ -934,33 +769,19 @@
             </div>
           </div>
 
-          <!--end col-md-6 -->
+          </div>
         </div>
-        <!--end row -->
-      </div>
-      <!--end container -->
-    </section>
-    <!--end faq section -->
-
-    <!--begin section-bg-1 -->
+      </section>
     <section class="section-bg-1">
       <div class="section-bg-red-overlay"></div>
 
-      <!--begin container-->
       <div class="container">
-        <!--begin row-->
         <div class="row">
-          <!--begin col md 7 -->
           <div class="col-md-7 mx-auto margin-bottom-20 text-center">
             <h3 class="white-text">Činjenice o Meni i Radu</h3>
           </div>
-          <!--end col md 7-->
-        </div>
-        <!--end row-->
-
-        <!--begin row-->
+          </div>
         <div class="row">
-          <!--begin fun-facts-box -->
           <div class="col-md-2 offset-md-2 fun-facts-box text-center">
             <i class="far fa-gem"></i>
 
@@ -968,9 +789,6 @@
               <span class="facts-numbers">10+</span><br />Godina u Dizajnu
             </p>
           </div>
-          <!--end fun-facts-box -->
-
-          <!--begin fun-facts-box -->
           <div class="col-md-2 fun-facts-box text-center">
             <i class="far fa-heart"></i>
 
@@ -978,9 +796,6 @@
               <span class="facts-numbers">47</span><br />Uspešno Završenih Projekata
             </p>
           </div>
-          <!--end fun-facts-box -->
-
-          <!--begin fun-facts-box -->
           <div class="col-md-2 fun-facts-box text-center">
             <i class="fas fa-award"></i>
 
@@ -988,9 +803,6 @@
               <span class="facts-numbers">95% </span><br /> Stopa Zadovoljstva Klijenata
             </p>
           </div>
-          <!--end fun-facts-box -->
-
-          <!--begin fun-facts-box -->
           <div class="col-md-2 fun-facts-box text-center">
             <i class="fas fa-anchor"></i>
 
@@ -998,21 +810,12 @@
               <span class="facts-numbers">20k+</span><br />Linija Optimizovanog Koda
             </p>
           </div>
-          <!--end fun-facts-box -->
+          </div>
         </div>
-        <!--end row-->
-      </div>
-      <!--end container-->
-    </section>
-    <!--end section-bg-1 -->
-
-    <!--begin section-white -->
+      </section>
     <section class="section-white no-padding" id="contact">
-      <!--begin container-->
       <div class="container-fluid px-0">
-        <!--begin row-->
         <div class="row no-gutters align-items-center">
-          <!--begin col-md-6-->
           <div class="col-md-6">
             <img
               src="https://i.imgur.com/HVsTDQT.jpeg"
@@ -1020,28 +823,16 @@
               alt="Happy"
             />
           </div>
-          <!--end col-sm-6-->
-
-          <!--begin col-md-6-->
           <div class="col-md-6">
-            <!--begin small-column-inside-->
             <div class="small-col-inside">
               <h3>Kontaktirajte me</h3>
 
               <p>Klikom na dugme pristupate kontakt formi</p>
 
-              <!--begin success message -->
               <p class="contact_success_box" style="display: none">
                 
               </p>
-              <!--end success message -->
-
-              <!--begin contact form -->
-         
-               
-
-
-<a href="https://forms.gle/qCJKBnKBuseicNLT6" target="_blank" rel="noopener noreferrer" class="btn-red small scrool">
+              <a href="https://forms.gle/qCJKBnKBuseicNLT6" target="_blank" rel="noopener noreferrer" class="btn-red small scrool">
   Kontaktirajte me
 </a>
 
@@ -1054,7 +845,6 @@
               Pratite me na društvenim mrežama i budite u toku sa najnovijim projektima i kreativnim idejama iz sveta web i grafičkog dizajna.
             </p>
 
-<!-- 🔗 Sekcija za ikonice -->
 <style>
 .social-icons {
   display: flex;
@@ -1087,61 +877,30 @@
 <br>
 
 <div class="social-icons">
-  <!-- Instagram -->
   <a href="https://www.instagram.com/graficki_web_dizajn_ks/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
     <i class="fab fa-instagram"></i>
   </a>
 
-  <!-- Facebook -->
   <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
     <i class="fab fa-facebook-f"></i>
   </a>
 
-  <!-- LinkedIn -->
   <a href="https://www.linkedin.com/in/marko-vuji%C4%87-404310247/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
     <i class="fab fa-linkedin-in"></i>
   </a>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              
-              <!--end contact form -->
-
               <p class="register-form-terms">
                 
               </p>
             </div>
-            <!--end small-column-inside-->
+            </div>
           </div>
-          <!--end col-md-6-->
         </div>
-        <!--end row-->
-      </div>
-      <!--end container-->
-    </section>
-    <!--end section-white -->
-
-    <!--begin footer -->
+      </section>
     <div class="footer">
-      <!--begin container -->
       <div class="container">
-        <!--begin row -->
         <div class="row">
-          <!--begin col-md-12 -->
           <div class="col-md-12 text-center">
             <p>
               Copyright © 2025 <span class="template-name">MarkoWEBDesign</span>.
@@ -1153,15 +912,9 @@
               >
             </p>
           </div>
-          <!--end col-md-12 -->
+          </div>
         </div>
-        <!--end row -->
       </div>
-      <!--end container -->
-    </div>
-    <!--end footer -->
-
-    <!-- Load JS here for greater good =============================-->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.scrollTo-min.js"></script>
@@ -1171,18 +924,3 @@
     <script src="js/custom.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
