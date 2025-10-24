@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"> <head>
+<html lang="en"> 
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="" />
@@ -8,8 +9,6 @@
 
 
 
-    </head>
-    
       <link 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     rel="stylesheet"
@@ -35,6 +34,49 @@
     />
 
     <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <style>
+      /* Stilovi za pozicioniranje i izgled zastavice u navigaciji (Desktop) */
+      .language-flag {
+          padding: 0;
+          margin-left: 15px;
+          display: flex;
+          align-items: center;
+      }
+  
+      .language-flag a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 35px;
+          height: 35px;
+          border: 2px solid white;
+          border-radius: 50%;
+          font-size: 1.1rem;
+          transition: all 0.2s ease-in-out;
+          background-color: transparent;
+      }
+  
+      .language-flag a:hover {
+          border-color: #E52F37;
+          transform: scale(1.05);
+      }
+
+      /* ======================================================= */
+      /* NOVI CSS: FIX za razmak na mobilnom prikazu */
+      /* ======================================================= */
+      @media (max-width: 991.98px) {
+          /* Primenjuje se na kolapsirani meni na mobilnim uređajima */
+          .language-flag {
+              /* Dodaje razmak iznad zastavice da se odvoji od "Contact Me" */
+              margin-top: 15px; 
+              margin-left: 0 !important; /* Resetuje levu marginu */
+              justify-content: center; /* Centrirajte zastavicu u kolapsiranom meniju */
+          }
+      }
+      /* ======================================================= */
+    </style>
+
   </head>
 
   <body>
@@ -71,10 +113,13 @@
                 <li class="discover-link">
                   <a href="#contact" class="discover-btn">Contact Me</a>
                 </li>
-
-
-
-              </ul>
+                
+                <li class="nav-item language-flag">
+                    <a href="index.html" title="Srpski" target="_self" class="external">
+                        🇷🇸
+                    </a>
+                </li>
+                </ul>
               </div>
             </nav>
           </div>
@@ -797,7 +842,7 @@
   <h3>Follow My Work</h3>
    
             <p>
-              Follow me on social media and stay up-to-date with the latest projects and creative ideas from the world of web and graphic design.
+              Follow me on social media and stay up-to-date with my latest projects, design ideas, and web tips on social media. Let's connect!
             </p>
 
 <style>
