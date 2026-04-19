@@ -101,6 +101,39 @@
               font-size: 13px; /* Smanjuje font na mobilnom da dugačak mejl ne beži */
           }
       }
+      /* REŠENJE ZA RAZMAK IZMEĐU KOLONA U "O MENI" */
+#about .row .col-md-6 {
+    padding-right: 40px; /* Ovo gura desnu kolonu dalje od leve */
+}
+
+.freelancer-details {
+    padding: 0;
+    list-style: none;
+}
+
+.freelancer-details li {
+    display: flex !important;
+    align-items: baseline;
+    margin-bottom: 12px;
+}
+
+.freelancer-main-details {
+    min-width: 85px; /* Fiksna širina za 'E-mail', 'Telefon' itd. */
+    font-weight: bold;
+}
+
+.freelancer-second-details {
+    margin-left: 10px; /* Dodatni razmak između naslova i podatka */
+    white-space: nowrap; /* Sprečava prelamanje e-maila */
+}
+
+/* Fix za mobilni da se ne dodiruju na malim ekranima */
+@media (max-width: 767px) {
+    #about .col-md-6 {
+        padding-right: 15px;
+        margin-bottom: 0;
+    }
+}
     </style>
     </style>
   </head>
