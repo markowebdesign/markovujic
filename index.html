@@ -76,6 +76,32 @@
           }
       }
       /* ======================================================= */
+      /* ... tvoj postojeći kod za zastavicu i mobilni fix ... */
+      
+      /* NOVI KOD ZA PORAVNANJE E-MAILA I OSTALIH DETALJA */
+      .freelancer-details li {
+          display: flex !important;
+          align-items: baseline;
+          margin-bottom: 12px;
+      }
+
+      .freelancer-main-details {
+          min-width: 90px; /* Širina za nazive: Lokacija, E-mail... */
+          font-weight: bold;
+          display: inline-block;
+      }
+
+      .freelancer-second-details {
+          flex: 1;
+          white-space: nowrap; /* Drži mejl u jednoj liniji */
+      }
+
+      @media (max-width: 480px) {
+          .freelancer-second-details {
+              font-size: 13px; /* Smanjuje font na mobilnom da dugačak mejl ne beži */
+          }
+      }
+    </style>
     </style>
   </head>
 
